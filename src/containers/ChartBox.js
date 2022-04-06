@@ -35,8 +35,8 @@ const ChartBox = () => {
         <div id="chartbox">
             <h1>ChartBox</h1>
             <div id="genre">
-                {/* { genre.name="All" ? <h2>Top 20</h2> : <h2>Top 20 - {genre.name}</h2>} */}
-                <h2>{genre.name}</h2>
+                {genre.name==="All" ? <h2>Top 20</h2> : <h2>Top 20 - {genre.name}</h2>}
+                {/* <h2>{genre.name}</h2> */}
                 <ChartGenreSelect genres={genres} onGenreSelected={onGenreSelected}/>
             </div>
             <TrackList tracks={tracks}/>

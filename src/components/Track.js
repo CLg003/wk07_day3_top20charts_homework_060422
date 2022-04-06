@@ -1,12 +1,20 @@
 import React from 'react';
 
-const Track = ({title, artist}) => {
+const Track = ({title, artist, image, preview}) => {
 
 
     return (
         <li>
-            <h3 className="track-details">{title}</h3>
-            <p className="track-details">{artist}</p>
+            <img src={image} alt="Track/artist image" height="130px"/>
+            <div className="track-details">
+                <h3>{title}</h3>
+                <p>{artist}</p>
+                <audio controls>
+                    <source src={preview}
+                    type="audio/x-m4a"/>
+                    Your browser does not support audio preview.
+                </audio>
+            </div>
         </li>
     )
 }
