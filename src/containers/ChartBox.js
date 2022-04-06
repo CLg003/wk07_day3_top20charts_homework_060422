@@ -14,18 +14,19 @@ const ChartBox = () => {
 
     const [tracks, setTracks] = useState([]);
 
-    const [genre, setGenre] = useState({});
+    const [genre, setGenre] = useState(genres[0]);
 
     const onGenreSelected = (genre) => {
         setGenre(genre);
+        // console.log(genre.url);
     }
 
     useEffect(() => {
         fetchTracks();
     }, [genre])
 
-    const fetchTracks = (genre) => {
-        (genre ? fetch(genre.url) : fetch("https://itunes.apple.com/gb/rss/topsongs/limit=20/json"))
+    const fetchTracks = () => {
+        fetch(genre['url'])
         .then(response => response.json())
         .then(data => setTracks(data.feed.entry));
     }

@@ -11,7 +11,7 @@ const ChartGenreSelect = ({genres, onGenreSelected}) => {
     const handleChangeGenre = (event) => {
         // event.preventDefault();
         const genreChosen = genres[event.target.value];
-        console.log(genreChosen);
+        // console.log(genreChosen);
         onGenreSelected(genreChosen);
     }
 
