@@ -1,0 +1,24 @@
+#chartbox {
+    width: 600px;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#genre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#select {
+    margin: 20px;
+}
+
+.track-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-flow: wrap row;
+}

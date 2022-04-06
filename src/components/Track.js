@@ -5,8 +5,8 @@ const Track = ({title, artist}) => {
 
     return (
         <li>
-            <h3>{title}</h3>
-            <p>{artist}</p>
+            <h3 className="track-details">{title}</h3>
+            <p className="track-details">{artist}</p>
         </li>
     )
 }
