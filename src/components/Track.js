@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Track = ({title, artist, image, preview}) => {
-
+const Track = ({chartPosition, title, artist, image, preview}) => {
 
     return (
         <li>
+            <h2>{chartPosition}</h2>
             <img src={image} alt="Track/artist image" height="130px"/>
             <div className="track-details">
-                <h3>{title}</h3>
-                <p>{artist}</p>
+                <h3 className="title">{title}</h3>
+                <p className="artist">{artist}</p>
                 <audio controls>
                     <source src={preview}
                     type="audio/x-m4a"/>

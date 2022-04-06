@@ -1,17 +1,37 @@
 #chartbox {
+    width: 800px;
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #390ca3;
+    padding: 40px;
+    font-family: Impact, "Trebuchet MS", Tahoma, Geneva, sans-serif;;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: Monoton, Phosphate;
+    color: #F72585;
+    text-shadow: 5px 5px 5px #7209B7;
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
 }
 
 #genre {
-    /* display: flex;
+    display: flex;
     flex-direction: row;
-    align-items: center; */
+    align-items: center;
+    font-size: larger;
+    color: #F72585;
+    text-shadow: 1px 1px #7209B7;
 }
 
 #select {
-    /* margin: 20px; */
+    margin: 20px;
 }
 
 li {
@@ -20,10 +40,40 @@ li {
     justify-content: flex-start;
     align-items: center;
     flex-flow: wrap row;
+    background-color: #b5179dfa;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+
+li > h2 {
+    font-size: 50px;
+    padding-left: 20px;
+    text-shadow: 1px 1px 5px #F72585;
+}
+
+img {
+    margin: 20px;
+    border: 2px solid #7209B7;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #F72585;
 }
 
 .track-details {
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
+}
+
+.title {
+    font-family: Monoton;
+    margin: 5px;
+    text-shadow: 1px 1px 5px #F72585;
+}
+
+.artist {
+    max-width: 400px;
+    font-family: "Trebuchet MS", Tahoma, Geneva, sans-serif;
+    font-weight: 800;
+    margin: 5px;
+    padding-bottom: 10px;
 }

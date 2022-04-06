@@ -17,7 +17,7 @@ const ChartGenreSelect = ({genres, onGenreSelected}) => {
 
     return (
         <select id="select" value="" onChange={handleChangeGenre}>
-            <option defaultValue="" >Select chart genre</option>
+            <option defaultValue="">Select chart genre</option>
             {genreOptions}
         </select>
     )
